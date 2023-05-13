@@ -4,7 +4,7 @@
   justify-items: center;
   align-items: center;
   gap: 150px;
-  padding: 20px 50px;
+  padding: 50px;
   background-color: var(--color-two);
 }
 
@@ -12,21 +12,34 @@
   font-size: 40px;
   color: var(--color-one);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .hero-btn {
   background-color: var(--color-three);
   border: none;
   transition: all 0.3s ease-in-out;
+  width: fit-content;
 }
 
 .hero-btn:hover {
   transform: scale(1.1);
 }
 
+.hero-btn:hover .hero-link {
+  color: var(--color-complement);
+}
+
 .hero-link {
   color: var(--color-one);
   font-size: 35px;
-  padding: 5px;
+  padding: 20px;
   text-decoration: none;
+}
+
+.hero-img {
+  border: 5px solid var(--color-complement);
 }

@@ -16,7 +16,7 @@ export default function Hero() {
           </NavLink>
         </button>
       </div>
-      <img src={city} alt="cyberpunk city" />
+      <img className="hero-img" src={city} alt="cyberpunk city" />
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.PromiseElement {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid var(--color-complement);
+  gap: 20px;
+  border-radius: 25px;
+  padding: 20px;
+  width: 350px;
+  background-color: var(--color-two);
+}
+
+.img-Promise-Element {
+  width: 100px;
+  filter: invert(66%) sepia(26%) saturate(985%) hue-rotate(8deg) brightness(99%)
+    contrast(92%);
+}
+
+.text-Promise-Element {
+  font-size: 25px;
+  color: var(--color-one);
+}
