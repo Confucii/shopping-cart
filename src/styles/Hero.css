@@ -1,0 +1,31 @@
+.Hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: var(--color-two);
+}
+
+.hero-holder {
+  font-size: 40px;
+  color: var(--color-one);
+  text-align: center;
+}
+
+.hero-btn {
+  background-color: var(--color-three);
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  transform: scale(1.1);
+}
+
+.hero-link {
+  color: var(--color-one);
+  font-size: 30px;
+  padding: 5px;
+  text-decoration: none;
+}
