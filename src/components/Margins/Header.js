@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import "../styles/Header.css";
-import cartLogo from "../images/cart.svg";
+import "./styles/Header.css";
+import cartLogo from "./images/cart.svg";
 
 export default function Header({ cart }) {
   return (

@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+  gap: 150px;
   padding: 20px 50px;
   background-color: var(--color-two);
 }
@@ -25,7 +26,7 @@
 
 .hero-link {
   color: var(--color-one);
-  font-size: 30px;
+  font-size: 35px;
   padding: 5px;
   text-decoration: none;
 }

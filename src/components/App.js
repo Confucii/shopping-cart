@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import "../styles/App.css";
-import Home from "./Home";
-import Shop from "./Shop";
-import Cart from "./Cart";
-import Header from "./Header";
-import Footer from "./Footer";
+import Home from "./Home/Home";
+import Shop from "./Shop/Shop";
+import Cart from "./Cart/Cart";
+import Header from "./Margins/Header";
+import Footer from "./Margins/Footer";
 import { useState } from "react";
 
 function App() {

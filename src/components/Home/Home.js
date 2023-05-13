@@ -1,4 +1,4 @@
-import "../styles/Home.css";
+import "./styles/Home.css";
 import Hero from "./Hero";
 
 export default function Home() {

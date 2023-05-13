@@ -1,4 +1,4 @@
-import "../styles/Cart.css";
+import "./styles/Cart.css";
 
 export default function Cart() {
   return <div className="Cart">Cart</div>;

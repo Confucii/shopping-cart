@@ -1,5 +1,5 @@
-import city from "../images/city.jpeg";
-import "../styles/Hero.css";
+import city from "./images/city.jpeg";
+import "./styles/Hero.css";
 import { NavLink } from "react-router-dom";
 
 export default function Hero() {
