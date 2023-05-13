@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--color-three);
 }
 
 .nav-hero {
@@ -29,7 +30,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -48,15 +48,16 @@ li {
   color: white;
   background-color: green;
   position: absolute;
-  width: 28px;
-  height: 28px;
-  left: -10px;
-  top: 35px;
+  width: 23px;
+  height: 23px;
+  bottom: 27px;
+  left: 25px;
   z-index: 1;
 }
 
 .number-in-cart > * {
   position: absolute;
+  font-size: 18px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

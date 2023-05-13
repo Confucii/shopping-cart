@@ -1,0 +1,11 @@
+.Footer {
+  background-color: var(--color-two);
+  text-align: center;
+  padding: 5px;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--color-one);
+}

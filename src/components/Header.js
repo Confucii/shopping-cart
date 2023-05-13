@@ -6,7 +6,7 @@ export default function Header({ cart }) {
   return (
     <div className="Header">
       <div className="nav-hero">
-        <NavLink className="link" to="/" style={{ color: "black" }}>
+        <NavLink className="link" to="/" style={{ color: "var(--color-one)" }}>
           Iron Maiden
         </NavLink>
       </div>
@@ -15,7 +15,9 @@ export default function Header({ cart }) {
           <NavLink
             className="link"
             to="/"
-            style={({ isActive }) => ({ color: isActive ? "red" : "black" })}
+            style={({ isActive }) => ({
+              color: isActive ? "var(--color-complement)" : "var(--color-one)",
+            })}
           >
             Home
           </NavLink>
@@ -24,7 +26,9 @@ export default function Header({ cart }) {
           <NavLink
             className="link"
             to="/shop"
-            style={({ isActive }) => ({ color: isActive ? "red" : "black" })}
+            style={({ isActive }) => ({
+              color: isActive ? "var(--color-complement)" : "var(--color-one)",
+            })}
           >
             Shop
           </NavLink>
@@ -35,8 +39,8 @@ export default function Header({ cart }) {
             to="/cart"
             style={({ isActive }) => ({
               filter: isActive
-                ? "invert(11%) sepia(94%) saturate(6842%) hue-rotate(5deg) brightness(94%) contrast(121%)"
-                : "none",
+                ? "invert(66%) sepia(26%) saturate(985%) hue-rotate(8deg) brightness(99%) contrast(92%)"
+                : "invert(98%) sepia(2%) saturate(548%) hue-rotate(174deg) brightness(99%) contrast(97%)",
             })}
           >
             <img className="header-cart" src={cartLogo} alt="shopping cart" />

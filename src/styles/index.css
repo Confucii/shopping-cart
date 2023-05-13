@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
 
+:root {
+  --color-one: #f1f6f9;
+  --color-two: #394867;
+  --color-three: #212a3e;
+  --color-four: #9ba4b5;
+  --color-complement: #d4af37;
+}
+
 * {
   margin: 0;
   padding: 0;
