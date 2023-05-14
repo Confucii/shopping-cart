@@ -2,7 +2,13 @@ import "./styles/Catalogue.css";
 import catalogue from "../shopping";
 import Item from "./Item";
 
-export default function Catalogue({ addItem, filter, search }) {
+export default function Catalogue({
+  addItem,
+  filter,
+  search,
+  cart,
+  changeItemCount,
+}) {
   let filtered = [...catalogue];
 
   if (filter) {
@@ -17,7 +23,15 @@ export default function Catalogue({ addItem, filter, search }) {
   return (
     <div className="Catalogue">
       {filtered.map((item) => {
-        return <Item item={item} key={item.id} addItem={addItem} />;
+        return (
+          <Item
+            item={item}
+            key={item.id}
+            addItem={addItem}
+            cart={cart}
+            changeItemCount={changeItemCount}
+          />
+        );
       })}
     </div>
   );

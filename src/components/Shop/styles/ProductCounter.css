@@ -1,0 +1,14 @@
+.ProductCounter {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-counter-btn {
+  height: 30px;
+  width: 25px;
+  line-height: 18px;
+  font-size: 30px;
+}

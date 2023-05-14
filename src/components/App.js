@@ -48,8 +48,26 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/shop">
-          <Route index element={<Shop addItem={addItem} />}></Route>
-          <Route path=":id" element={<ItemCard addItem={addItem} />}></Route>
+          <Route
+            index
+            element={
+              <Shop
+                addItem={addItem}
+                cart={cart}
+                changeItemCount={changeItemCount}
+              />
+            }
+          ></Route>
+          <Route
+            path=":id"
+            element={
+              <ItemCard
+                addItem={addItem}
+                cart={cart}
+                changeItemCount={changeItemCount}
+              />
+            }
+          ></Route>
         </Route>
         <Route path="/cart">
           <Route

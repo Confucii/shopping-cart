@@ -9,10 +9,6 @@ export default function CartItem({ item, count, changeItemCount }) {
     changeItemCount(item, count + 1);
   }
 
-  function inputChange(e) {
-    changeItemCount(item, Number(e.currentTarget.value));
-  }
-
   return (
     <div className="CartItem">
       <img className="cart-item-img" src={item.image} alt={item.name} />
@@ -23,13 +19,7 @@ export default function CartItem({ item, count, changeItemCount }) {
           <button className="cart-item-btn" onClick={reduceItemCount}>
             -
           </button>
-          <input
-            onChange={inputChange}
-            type="number"
-            name="cart-item-count"
-            id="cart-item-count"
-            value={count}
-          />
+          <div className="count">{count}</div>
           <button className="cart-item-btn" onClick={increaseItemCount}>
             +
           </button>
