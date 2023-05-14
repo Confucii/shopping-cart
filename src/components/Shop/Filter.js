@@ -1,6 +1,6 @@
 import "./styles/Filter.css";
 
-export default function Filter({ setFilter }) {
+export default function Filter({ setFilter, search, setSearch }) {
   function toggleFilter(e) {
     if (e.currentTarget.classList.contains("chosen")) {
       e.currentTarget.classList.remove("chosen");
@@ -12,8 +12,20 @@ export default function Filter({ setFilter }) {
     }
   }
 
+  function handleSearchChange(e) {
+    setSearch(e.currentTarget.value);
+  }
+
   return (
     <div className="Filter">
+      <p className="search-name">Search</p>
+      <input
+        type="text"
+        name="search-input"
+        id="search-input"
+        onChange={handleSearchChange}
+        value={search}
+      />
       <p className="filter-name">Filter</p>
       <ul className="filter-list">
         <li className="filter-item" onClick={toggleFilter}>

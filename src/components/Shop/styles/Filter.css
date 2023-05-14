@@ -4,11 +4,16 @@
   gap: 10px;
   align-items: center;
   background-color: var(--color-four);
-  padding: 10px 80px;
+  padding: 10px 40px;
 }
 
-.filter-name {
+.filter-name,
+.search-name {
   font-size: 40px;
+}
+
+#search-input {
+  font-size: 20px;
 }
 
 .filter-item {

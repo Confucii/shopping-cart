@@ -2,17 +2,22 @@ import "./styles/Catalogue.css";
 import catalogue from "../shopping";
 import Item from "./Item";
 
-export default function Catalogue({ addItem, filter }) {
+export default function Catalogue({ addItem, filter, search }) {
+  let filtered = [...catalogue];
+
+  if (filter) {
+    filtered = filtered.filter((item) => filter === item.type);
+  }
+
+  if (search) {
+    const regex = new RegExp(search, "i");
+    filtered = filtered.filter((item) => regex.test(item.name));
+  }
+
   return (
     <div className="Catalogue">
-      {catalogue.map((item) => {
-        let newItem;
-        if (!filter) {
-          newItem = <Item item={item} key={item.id} addItem={addItem} />;
-        } else if (filter === item.type) {
-          newItem = <Item item={item} key={item.id} addItem={addItem} />;
-        }
-        return newItem;
+      {filtered.map((item) => {
+        return <Item item={item} key={item.id} addItem={addItem} />;
       })}
     </div>
   );
