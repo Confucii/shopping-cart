@@ -1,0 +1,26 @@
+.Filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background-color: var(--color-four);
+  padding: 10px 80px;
+}
+
+.filter-name {
+  font-size: 40px;
+}
+
+.filter-item {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 32px;
+}
+
+.filter-item.chosen {
+  color: var(--color-complement);
+}
+
+.filter-item:hover {
+  transform: scale(1.1);
+}
