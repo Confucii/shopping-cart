@@ -6,6 +6,7 @@ import Cart from "./Cart/Cart";
 import Header from "./Margins/Header";
 import Footer from "./Margins/Footer";
 import { useState } from "react";
+import ItemCard from "./Shop/ItemCard";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -26,7 +27,10 @@ function App() {
       <Header cart={cart} />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/shop" element={<Shop addItem={addItem} />}></Route>
+        <Route path="/shop">
+          <Route index element={<Shop addItem={addItem} />}></Route>
+          <Route path=":id" element={<ItemCard addItem={addItem} />}></Route>
+        </Route>
         <Route path="/cart" element={<Cart cart={cart} />}></Route>
       </Routes>
       <Footer />
