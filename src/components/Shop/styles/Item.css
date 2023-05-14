@@ -1,8 +1,25 @@
 .Item {
   text-align: center;
   font-size: 28px;
+  background-color: var(--color-three);
+  padding: 7px;
+  border: 2px solid var(--color-complement);
+  border-radius: 10px;
+  color: var(--color-one);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Item:hover {
+  transform: scale(1.03);
 }
 
 .item-img {
   height: 600px;
+  border-radius: 5px;
+}
+
+.item-btn {
+  padding: 0px 5px;
+  font-size: 26px;
 }

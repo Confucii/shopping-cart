@@ -10,8 +10,15 @@ import { useState } from "react";
 function App() {
   const [cart, setCart] = useState([]);
 
-  function addItem(item) {
-    setCart([...cart, item]);
+  function addItem(newItem) {
+    const index = cart.findIndex((item) => item.id === newItem.id);
+    if (index >= 0) {
+      const newCart = [...cart];
+      newCart[index].count += 1;
+      setCart(newCart);
+    } else {
+      setCart([...cart, { ...newItem, count: 1 }]);
+    }
   }
 
   return (

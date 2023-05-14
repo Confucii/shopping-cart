@@ -8,9 +8,9 @@ export default function Catalogue({ addItem, filter }) {
       {catalogue.map((item) => {
         let newItem;
         if (!filter) {
-          newItem = <Item item={item} key={item.id} />;
+          newItem = <Item item={item} key={item.id} addItem={addItem} />;
         } else if (filter === item.type) {
-          newItem = <Item item={item} key={item.id} />;
+          newItem = <Item item={item} key={item.id} addItem={addItem} />;
         }
         return newItem;
       })}

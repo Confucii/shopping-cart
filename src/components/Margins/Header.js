@@ -49,7 +49,11 @@ export default function Header({ cart }) {
             className="number-in-cart"
             style={{ display: cart.length > 0 ? "block" : "none" }}
           >
-            <span>{cart.length > 0 ? cart.length : ""}</span>
+            <span>
+              {cart.length > 0
+                ? cart.reduce((sum, current) => sum + current.count, 0)
+                : ""}
+            </span>
           </div>
         </li>
       </ul>
