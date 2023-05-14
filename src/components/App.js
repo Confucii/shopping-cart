@@ -7,6 +7,7 @@ import Header from "./Margins/Header";
 import Footer from "./Margins/Footer";
 import { useState } from "react";
 import ItemCard from "./Shop/ItemCard";
+import Checkout from "./Cart/Checkout";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -18,8 +19,27 @@ function App() {
       newCart[index].count += 1;
       setCart(newCart);
     } else {
-      setCart([...cart, { ...newItem, count: 1 }]);
+      setCart([...cart, { id: newItem.id, count: 1 }]);
     }
+  }
+
+  function removeItem(deleteItem) {
+    setCart(cart.filter((item) => item.id !== deleteItem.id));
+  }
+
+  function changeItemCount(changeItem, count) {
+    if (count < 1) {
+      removeItem(changeItem);
+    } else {
+      const index = cart.findIndex((item) => item.id === changeItem.id);
+      const newCart = [...cart];
+      newCart[index].count = count;
+      setCart(newCart);
+    }
+  }
+
+  function clearCart() {
+    setCart([]);
   }
 
   return (
@@ -31,7 +51,19 @@ function App() {
           <Route index element={<Shop addItem={addItem} />}></Route>
           <Route path=":id" element={<ItemCard addItem={addItem} />}></Route>
         </Route>
-        <Route path="/cart" element={<Cart cart={cart} />}></Route>
+        <Route path="/cart">
+          <Route
+            index
+            element={
+              <Cart
+                cart={cart}
+                changeItemCount={changeItemCount}
+                clearCart={clearCart}
+              />
+            }
+          ></Route>
+          <Route path="checkout" element={<Checkout />}></Route>
+        </Route>
       </Routes>
       <Footer />
     </div>

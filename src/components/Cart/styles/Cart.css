@@ -1,0 +1,29 @@
+.Cart {
+  background-color: var(--color-two);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-window {
+  padding: 10px;
+  background-color: var(--color-four);
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+  font-size: 28px;
+}
+
+.checkout-btn {
+  font-size: 28px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.empty-cart {
+  font-size: 26px;
+}
