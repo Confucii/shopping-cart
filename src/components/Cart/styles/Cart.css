@@ -9,6 +9,9 @@
   padding: 10px;
   background-color: var(--color-four);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   width: 40%;
   text-align: center;
   font-size: 28px;
@@ -16,6 +19,8 @@
 
 .checkout-btn {
   font-size: 28px;
+  width: 30%;
+  align-self: center;
 }
 
 .items {

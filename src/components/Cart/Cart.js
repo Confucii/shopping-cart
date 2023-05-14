@@ -26,7 +26,7 @@ export default function Cart({ cart, changeItemCount, clearCart }) {
       0
     );
     cartRender = (
-      <div className="checkout">
+      <div className="checkout-window">
         <div className="items">{cartItems}</div>
         <p>Sum: {sum}</p>
         <button className="checkout-btn" onClick={checkout}>
@@ -35,12 +35,12 @@ export default function Cart({ cart, changeItemCount, clearCart }) {
       </div>
     );
   } else {
-    cartRender = <p className="empty-cart">Cart is empty!</p>;
+    cartRender = (
+      <div className="checkout-window">
+        <p className="empty-cart">Cart is empty!</p>
+      </div>
+    );
   }
 
-  return (
-    <div className="Cart">
-      <div className="checkout-window">{cartRender}</div>
-    </div>
-  );
+  return <div className="Cart">{cartRender}</div>;
 }

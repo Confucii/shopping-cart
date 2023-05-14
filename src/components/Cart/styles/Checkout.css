@@ -1,0 +1,8 @@
+.Checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-two);
+  font-size: 60px;
+  color: var(--color-one);
+}
