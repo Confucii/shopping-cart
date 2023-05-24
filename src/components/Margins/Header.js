@@ -46,6 +46,7 @@ export default function Header({ cart }) {
             <img className="header-cart" src={cartLogo} alt="shopping cart" />
           </NavLink>
           <div
+            data-testid="cart-num"
             className="number-in-cart"
             style={{ display: cart.length > 0 ? "block" : "none" }}
           >

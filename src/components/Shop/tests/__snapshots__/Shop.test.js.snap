@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shop Shop is generated 1`] = `
+<div
+  className="Shop"
+>
+  <div
+    className="Filter"
+  >
+    <p
+      className="search-name"
+    >
+      Search
+    </p>
+    <input
+      id="search-input"
+      name="search-input"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <p
+      className="filter-name"
+    >
+      Filter
+    </p>
+    <ul
+      className="filter-list"
+    >
+      <li
+        className="filter-item"
+        onClick={[Function]}
+      >
+        Red
+      </li>
+      <li
+        className="filter-item"
+        onClick={[Function]}
+      >
+        Pink
+      </li>
+      <li
+        className="filter-item"
+        onClick={[Function]}
+      >
+        Black
+      </li>
+      <li
+        className="filter-item"
+        onClick={[Function]}
+      >
+        Gold
+      </li>
+    </ul>
+  </div>
+  <div
+    className="Catalogue"
+  >
+    <div
+      className="Item"
+      data-id={0}
+      onClick={[Function]}
+    >
+      <img
+        alt="Shining Knight"
+        className="item-img"
+        src="black_1.png"
+      />
+      <p>
+        Model: 
+        Shining Knight
+      </p>
+      <p>
+        Price: 
+        30000
+         credits
+      </p>
+      <button
+        className="item-btn"
+        onClick={[Function]}
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      className="Item"
+      data-id={1}
+      onClick={[Function]}
+    >
+      <img
+        alt="Ember Destroyer"
+        className="item-img"
+        src="black_2.png"
+      />
+      <p>
+        Model: 
+        Ember Destroyer
+      </p>
+      <p>
+        Price: 
+        25000
+         credits
+      </p>
+      <button
+        className="item-btn"
+        onClick={[Function]}
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      className="Item"
+      data-id={2}
+      onClick={[Function]}
+    >
+      <img
+        alt="Golden Revenger"
+        className="item-img"
+        src="gold_1.png"
+      />
+      <p>
+        Model: 
+        Golden Revenger
+      </p>
+      <p>
+        Price: 
+        35000
+         credits
+      </p>
+      <button
+        className="item-btn"
+        onClick={[Function]}
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      className="Item"
+      data-id={3}
+      onClick={[Function]}
+    >
+      <img
+        alt="Radiant Guardian"
+        className="item-img"
+        src="gold_2.png"
+      />
+      <p>
+        Model: 
+        Radiant Guardian
+      </p>
+      <p>
+        Price: 
+        40000
+         credits
+      </p>
+      <button
+        className="item-btn"
+        onClick={[Function]}
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      className="Item"
+      data-id={4}
+      onClick={[Function]}
+    >
+      <img
+        alt="Crimson Ravager"
+        className="item-img"
+        src="red_1.png"
+      />
+      <p>
+        Model: 
+        Crimson Ravager
+      </p>
+      <p>
+        Price: 
+        24000
+         credits
+      </p>
+      <button
+        className="item-btn"
+        onClick={[Function]}
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      className="Item"
+      data-id={5}
+      onClick={[Function]}
+    >
+      <img
+        alt="Flush Menace"
+        className="item-img"
+        src="pink_1.png"
+      />
+      <p>
+        Model: 
+        Flush Menace
+      </p>
+      <p>
+        Price: 
+        23000
+         credits
+      </p>
+      <button
+        className="item-btn"
+        onClick={[Function]}
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      className="Item"
+      data-id={6}
+      onClick={[Function]}
+    >
+      <img
+        alt="Bubblegum Feline"
+        className="item-img"
+        src="pink_2.png"
+      />
+      <p>
+        Model: 
+        Bubblegum Feline
+      </p>
+      <p>
+        Price: 
+        20000
+         credits
+      </p>
+      <button
+        className="item-btn"
+        onClick={[Function]}
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      className="Item"
+      data-id={7}
+      onClick={[Function]}
+    >
+      <img
+        alt="Rose Protector"
+        className="item-img"
+        src="pink_3.png"
+      />
+      <p>
+        Model: 
+        Rose Protector
+      </p>
+      <p>
+        Price: 
+        15000
+         credits
+      </p>
+      <button
+        className="item-btn"
+        onClick={[Function]}
+      >
+        Add to cart
+      </button>
+    </div>
+  </div>
+</div>
+`;

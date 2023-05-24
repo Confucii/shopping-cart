@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correct number 1`] = `
+<div
+  className="Home"
+>
+  <div
+    className="Hero"
+  >
+    <div
+      className="hero-holder"
+    >
+      <div
+        className="hero-text"
+      >
+        Unleash your potential with our power armor - unyielding protection and unstoppable strength is all you need to survive in Night City.
+      </div>
+      <button
+        className="hero-btn"
+      >
+        <a
+          className="hero-link"
+          href="/shop"
+          onClick={[Function]}
+        >
+          Shop Now
+        </a>
+      </button>
+    </div>
+    <img
+      alt="cyberpunk city"
+      className="hero-img"
+      src="city.jpeg"
+    />
+  </div>
+  <div
+    className="Promises"
+  >
+    <div
+      className="PromiseElement"
+    >
+      <img
+        alt="Pistol"
+        className="img-Promise-Element"
+        src="pistol.svg"
+      />
+      <p
+        className="text-Promise-Element"
+      >
+        To effectively safeguard your life and prove dangerous to everyone else we make our suits powerful. Advanced weapons, enhanced physical strength, and built-in medical treatments make you an ultimate fighting machine.
+      </p>
+    </div>
+    <div
+      className="PromiseElement"
+    >
+      <img
+        alt="Shield"
+        className="img-Promise-Element"
+        src="shield-half-full.svg"
+      />
+      <p
+        className="text-Promise-Element"
+      >
+        
+Your safety is of utmost importance to us. Advanced materials provide superior protection and comfort, while built-in shock absorbers and hidden compartments make it perfect for urban warriors.
+      </p>
+    </div>
+    <div
+      className="PromiseElement"
+    >
+      <img
+        alt="Cat"
+        className="img-Promise-Element"
+        src="cat.svg"
+      />
+      <p
+        className="text-Promise-Element"
+      >
+        Our designs are made to be fashionable. With smooth metallic lines, playful colors, and advanced protection features, this suit is the perfect combination of cute and fierce. Some designs feature feline features.
+      </p>
+    </div>
+  </div>
+</div>
+`;
