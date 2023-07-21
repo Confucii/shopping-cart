@@ -3,9 +3,10 @@
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
-  gap: 150px;
+  gap: 50px;
   padding: 50px;
   background-color: var(--color-two);
+  flex: 1;
 }
 
 .hero-holder {
@@ -42,4 +43,6 @@
 
 .hero-img {
   border: 5px solid var(--color-complement);
+  width: 500px;
+  height: auto;
 }

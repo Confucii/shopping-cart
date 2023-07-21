@@ -1,6 +1,6 @@
 # shopping-cart
 
-Odin project shopping cart. This project features client side routing, as well as more React practice. This is a fake e-commerce store set in cyberpunk world. This store focus is selling durable cyberarmor to women.
+Odin project shopping cart. This project features client side routing, React testing, as well as more React practice. This is a fake e-commerce store set in cyberpunk world. This store focus is selling durable cyberarmor to women.
 
 ## [Live Demo](https://confucii.github.io/shopping-cart/)
 
